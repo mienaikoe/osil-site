@@ -1,61 +1,85 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import { Instagram } from "lucide-astro";
+
+type Props = {
+  withSplash?: boolean;
+};
+
+const { withSplash } = Astro.props;
 ---
 
-<header>
+<osil-header withSplash={withSplash}>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links">
-      <HeaderLink href="/events">Events</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/about">About</HeaderLink>
-    </div>
-    <div class="social-links">
-      <a
-        href="https://www.instagram.com/oursecretingredientislove"
-        target="_blank"
-      >
-        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-          ><path
-            fill="currentColor"
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-          ></path></svg
+    <a class="logo" href="/">
+      <img src="2024-02-13 Our Secret Ingredient Logo Horizontal.svg" />
+    </a>
+    <div class="links">
+      <div class="internal-links">
+        <HeaderLink href="/blog">Blog</HeaderLink>
+        <!-- <HeaderLink href="/about">About</HeaderLink> -->
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/oursecretingredientislove"
+          target="_blank"
         >
-      </a>
+          <Instagram />
+        </a>
+      </div>
     </div>
   </nav>
-</header>
+</osil-header>
 <style>
-  header {
+  osil-header {
     margin: 0;
-    padding: 0 1em;
-    background: white;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease;
+    z-index: 1;
   }
-  h2 {
+  osil-header.top {
+    background-color: transparent;
+  }
+  osil-header a {
+    color: white;
+  }
+  .logo {
     margin: 0;
-    font-size: 1em;
+    display: flex;
+    align-items: center;
   }
 
-  h2 a,
-  h2 a.active {
-    text-decoration: none;
+  .logo img {
+    border-radius: 0;
+    height: 1rem;
   }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    border-bottom: 4px solid transparent;
+  .links a {
+    padding: 0.6rem 0.8rem;
+    line-height: 1rem;
     text-decoration: none;
+    border-radius: 0.5rem;
   }
-  nav a.active {
+  .links a.active {
     text-decoration: none;
-    border-bottom-color: var(--accent);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .social-links,
   .social-links a {
@@ -67,3 +91,22 @@ import { SITE_TITLE } from "../consts";
     }
   }
 </style>
+<script>
+  class OSILHeader extends HTMLElement {
+    constructor() {
+      super();
+      if (!this.dataset.withSplash) {
+        return;
+      }
+      document.addEventListener("scroll", () => {
+        if (window.scrollY === 0) {
+          this.className = "top";
+        } else {
+          this.className = "";
+        }
+      });
+    }
+  }
+
+  customElements.define("osil-header", OSILHeader);
+</script>
