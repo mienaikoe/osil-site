@@ -8,8 +8,8 @@ import FormattedDate from "../components/FormattedDate.astro";
 type Props = {
   title: string;
   description: string;
-  heroImage: string;
-  heroVideo: string;
+  heroImage?: string;
+  heroVideo?: string;
 };
 
 const { title, description, heroImage, heroVideo } = Astro.props;
