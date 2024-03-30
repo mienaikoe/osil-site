@@ -55,7 +55,6 @@ const blog = defineCollection({
 });
 
 const menu = defineCollection({
-	type: 'content',
 	schema: menuSchema,
 });
 
