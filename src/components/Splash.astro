@@ -2,38 +2,39 @@
 
 ---
 
-<div class="splash">
-  <img src="/IMG_2044.JPG" class="background" />
-  <h1>Inclusive Recipes with Ethical Ingredients</h1>
-</div>
+<splash class="splash m-4 rounded-lg overflow-hidden">
+  <img
+    src="/IMG_2044.JPG"
+    class="background w-full h-full object-cover -z-10"
+  />
+  <div class="heading-overlay">
+    <h1
+      class="my-40 mx-10 md:my-60 md:mx-20 drop-shadow-md text-white text-5xl md:text-6xl md:max-w-screen-sm font-splash"
+    >
+      Inclusive Recipes with Ethical Ingredients
+    </h1>
+  </div>
+</splash>
 <style>
-  .splash {
-    width: 100%;
-    height: 90vh;
+  splash {
+    display: block;
+    height: 80vh;
     overflow: hidden;
     position: relative;
   }
-  .splash * {
-    color: white;
-    font-weight: normal;
-  }
-  .background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-    z-index: -1;
-  }
-  h1 {
-    margin: 20rem 10rem;
+  .heading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   @media screen and (max-width: 600px) {
     .background {
       width: unset;
       height: 100%;
-      /* margin-left: -50%; */
-      /* position: relative; */
     }
   }
 </style>

@@ -1,0 +1,37 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import { Instagram } from "lucide-astro";
+
+//  flex flex-row justify-between items-center
+---
+
+<div>
+  <div class="navbar bg-white border-b-2 border-black h-16">
+    <div class="flex-1">
+      <a class="btn btn-ghost p-4" href="/">
+        <img src="/osil-logo-black.svg" class="h-full" />
+      </a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal items-center">
+        <!-- <li><a href="/blog">Blog</a></li> -->
+        <li><a href="/recipes">Recipes</a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/oursecretingredientislove"
+            target="_blank"
+          >
+            <Instagram />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  li {
+    font-weight: bold;
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("menu");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"menu">;
+
+const post = Astro.props;
+const { sections, title, heroImage } = post.data;
+---
+
+<PageLayout>
+  <main>
+    <figure class="mb-4 rounded-lg overflow-hidden">
+      <img src={heroImage} class="w-full" />
+    </figure>
+    <article class="prose">
+      <h2>Menu for {title}</h2>
+      {
+        sections.map((section) => (
+          <>
+            <h3>{section.title}</h3>
+            {section.items.map((item) => (
+              <>
+                <h4>{item.title}</h4>
+                <div>{item.description}</div>
+                {item.contains.length > 0 && (
+                  <div class="italic">Contains: {item.contains.join(",")}</div>
+                )}
+              </>
+            ))}
+          </>
+        ))
+      }
+    </article>
+  </main>
+</PageLayout>

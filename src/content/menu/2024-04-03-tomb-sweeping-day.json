@@ -1,0 +1,33 @@
+{
+  "title": "Tombsweeping Day: Documentary on the Chinese Exclusion Act",
+  "description": "Menu for Tombsweeping Day: Documentary on the Chinese Exclusion Act on April 3, 2024",
+  "pubDate": "Mar 30, 2024",
+  "heroImage": "/tombsweeping-banner.png",
+  "sections": [
+    {
+      "title": "便當 (Biandang) Dinner",
+      "items": [
+        {
+          "title": "Sticky Rice",
+          "description": "Jerone's Sticky Rice",
+          "contains": ["peanut"]
+        },
+        {
+          "title": "Mushroom Gravy",
+          "description": "Jesse's Mushroom Gravy",
+          "contains": ["soy"]
+        },
+        {
+          "title": "Pickled Cucumber and Carrot",
+          "description": "Alice's Quick Pickles",
+          "contains": []
+        },
+        {
+          "title": "Sweet Green Rice with Red Bean Dumplings",
+          "description": "Qingtian is a sweet dish often eaten on tomb sweeping day",
+          "contains": ["gluten"]
+        }
+      ]
+    }
+  ]
+}

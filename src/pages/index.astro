@@ -1,61 +1,26 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import Splash from "../components/Splash.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import PageLayout from "../layouts/PageLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header withSplash />
-    <Splash />
-    <section class="phototext">
-      <img src="/IMG_2365.JPG" />
-      <div class="text">
-        <h3>
-          Our Secret Ingredient is Love is a grassroots culinary collective that
-          shares the delight of eating ethically together. We explore how to
-          make meals more environmentally conscious and more nourishing for all
-          our loved ones. We are 100% plant-based.
-        </h3>
-        <p>
-          OSIL facilitates special culinary experiences, creates educational
-          content, and provides culinary services to mission-aligned community
-          partners. Let’s cook something good up together!
-        </p>
-      </div>
-    </section>
-
-    <Footer />
-    <style>
-      .phototext {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 4rem 6rem;
-      }
-      .phototext .text {
-        max-width: 480px;
-      }
-      .phototext img {
-        width: 480px;
-      }
-      .phototext h3 {
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-      }
-      .phototext p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        color: rgb(var(--gray));
-      }
-    </style>
-  </body>
-</html>
+<PageLayout>
+  <Splash />
+  <section class="p-4 flex flex-col md:flex-row gap-8 items-start">
+    <img class="md:w-1/2 rounded-lg" src="/IMG_2365.JPG" />
+    <div class="prose md:flex-1">
+      <h3>
+        Our Secret Ingredient is Love is a grassroots culinary collective that
+        shares the delight of eating ethically together.
+      </h3>
+      <p>
+        We explore how to make meals more environmentally conscious and more
+        nourishing for all our loved ones. We are 100% plant-based.
+      </p>
+      <p>
+        OSIL facilitates special culinary experiences, creates educational
+        content, and provides culinary services to mission-aligned community
+        partners. Let’s cook something good up together!
+      </p>
+    </div>
+  </section>
+</PageLayout>
