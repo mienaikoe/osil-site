@@ -8,24 +8,24 @@
       "title": "便當 (Biandang) Dinner",
       "items": [
         {
-          "title": "Sticky Rice",
-          "description": "Jerone's Sticky Rice",
-          "contains": ["peanut"]
-        },
-        {
-          "title": "Mushroom Gravy",
-          "description": "Jesse's Mushroom Gravy",
-          "contains": ["soy"]
-        },
-        {
-          "title": "Pickled Cucumber and Carrot",
-          "description": "Alice's Quick Pickles",
+          "title": "糯米飯 | Nuòmǐ Fàn | Sticky Rice",
+          "description": "Jerone's family's recipe for sticky rice mixed with mushrooms. Full of taiwanese flavor.",
           "contains": []
         },
         {
-          "title": "Sweet Green Rice with Red Bean Dumplings",
-          "description": "Qingtian is a sweet dish often eaten on tomb sweeping day",
-          "contains": ["gluten"]
+          "title": "Umami Mushroom Gravy",
+          "description": "This blanket of umami starts with a base of shitake and bunashimeji mushrooms that are cooked slowly til golden brown, then blended with a gluten-free roux, nutmeg, miso, tamari, and creamy soy milk.",
+          "contains": ["soy"]
+        },
+        {
+          "title": "Đồ Chua | Pickled Cucumber and Carrot",
+          "description": "Alice spent three days preparing this recipe from Southern China / Vietnam. Carrots, daikon, and cucumbers are immersed in a mild mixture of sugar, salt, vinegar, and peppercorns. It's a dish best served cold to cut through the unctuous rice and gravy.",
+          "contains": []
+        },
+        {
+          "title": "青团 | Qing Tuan | Mugwort Mochi with Red Bean",
+          "description": "Qingtian is a sweet dish often eaten on tomb sweeping day in the area of China around Shanghai.",
+          "contains": []
         }
       ]
     }
