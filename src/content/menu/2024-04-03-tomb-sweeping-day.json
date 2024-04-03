@@ -8,9 +8,9 @@
       "title": "便當 (Biandang) Dinner",
       "items": [
         {
-          "title": "糯米飯 | Nuòmǐ Fàn | Sticky Rice",
-          "description": "Jerone's family's recipe for sticky rice mixed with mushrooms. Full of taiwanese flavor.",
-          "contains": []
+          "title": "糯米飯 | Nuòmǐ Fàn | Tombsweeping Sticky Rice",
+          "description": "Taiwanese preserved mustard greens, goji berries, boiled peanuts, and Impossible pork mixed into a wild sticky rice blend. Topped with a roasted chestnut. [peanut free available upon request]",
+          "contains": ["peanut", "tree-nut"]
         },
         {
           "title": "Umami Mushroom Gravy",
