@@ -5,30 +5,30 @@
   "heroImage": "/content/Hanunah-Green-BG-Letter-Sized-Light.png",
   "sections": [
     {
-      "title": "Starters",
+      "title": "5-Course Prix Fixe",
       "items": [
         {
-          "title": "Taiwanese-Style Sticky Rice Onigiri w/ Boiled Almonds",
+          "title": "I. Taiwanese-Style Sticky Rice Onigiri w/ Boiled Almonds",
           "description": "A new version of Jerone’s famous umami mushroom sticky rice, seared  with a sweet coconut amino glaze. Tonight’s rendition features raw Sicilian Almonds slow simmered in Taiwanese spices. Sticky rice blend, Crimini mushrooms, Shiitake mushrooms, Brown Beech Mushrooms, Chinese mushroom bouillon, almonds, cilantro (V, SF, GF, AF)",
           "contains": ["tree-nut"]
         },
         {
-          "title": "Marinated Avocado Salad",
+          "title": "II. Marinated Avocado Salad",
           "description": "Avocados marinated for 24 hrs in Chinese toasted sesame oil, garlic black bean soy sauce, and balsamic vinegar, drizzled with tahini and dusted with home-made togarashi featuring chilis from our guildhall’s rooftop Renee and the Skylight Farm Lab, served on a bed of greens. Avocado, baby arugula, baby bok choy, sprouted sunflower seeds, spicy togarashi spice blend. (V, GF)",
           "contains": []
         },
         {
-          "title": "Homemade Dumplings",
+          "title": "III. Homemade Dumplings",
           "description": "Two  different plant-based dumplings, pan-fried with  homemade dipping sauce:   1. Beyond Beef, Garlic, Cumin, Dried chilis from our rooftop garden, GF “No Soy” Soy Sauce, Shaoxing wine, Salt, Carrots, Lentils (V, SF, GF)           2. Chrysanthemum greens, Napa Cabbage, Pumpkin Seeds, Sprouted Sunflower Seeds, Shiitake Mushroom, Glass Noodles, Chinese Mushroom Bouillon (V, SF, GF)",
           "contains": ["allium"]
         },
         {
-          "title": "Plant-based Steak w/  White Miso Winter Stew in Acorn Squash",
+          "title": "IV. Plant-based Steak w/  White Miso Winter Stew in Acorn Squash",
           "description": "Seared Juicy Marbles Thick Cut Filet with a sumptuous claypot-style rustic veggie stew inside a baked acorn squash.  Soy Protein Filet, Acorn Squash, Taro, Yams, Napa Cabbage, Great Northern Beans, White Miso, Charred Sweet Onion, Mushroom Bouillon, and Fresh Sage.",
           "contains": []
         },
         {
-          "title": "Hot Cacao & Mandarins",
+          "title": "V. Hot Cacao & Mandarins",
           "description": "Peruvian Cacao blended in oat milk and Indonesian coconut sugar, then slow simmered with green cardamom, cinnamon, cloves, and star anise. Enjoy with organic California mandarins.",
           "contains": []
         }
