@@ -1,0 +1,123 @@
+{
+  "title": "NNN Fall 2023: \"Cutie Pies\"",
+  "description": "Lovingly harvested, prepared, and/or served by Jerone, Jesse, Alice, Kate, Lee, Renee, Illy, George, Yuko, & Nicola (aka “Chef Mom”). Special Thanks to Impossible Foods for the proteins, Skylight Farm Lab / Seeds to Soil for the fresh produce, Cafe 424 for the essential kitchen support, and Prime Produce for this singular community.",
+  "pubDate": "Oct 8, 2023",
+  "heroImage": "/content/sage-bg-menu.png",
+  "sections": [
+    {
+      "title": "Snacks, Appetizers, Palate Cleansers      ",
+      "items": [
+        {
+          "title": "Tochi Gourmet Popcorn",
+          "description": "(Salted Egg flavor)",
+          "contains": ["egg"]
+        },
+        {
+          "title": "Filiflavors’ Crispy Mushroom Chicharon",
+          "description": "(Filipino BBQ flavor)",
+          "contains": []
+        },
+        {
+          "title": "Fresh Fruit",
+          "description": "Pears, plums, dragonfruit, pineapple, grapes, mandarin oranges. Please help yourself!",
+          "contains": []
+        },
+        {
+          "title": "Charred Mushroom Oregano Soup",
+          "description": "Char-grilled portobello and shiitake mushrooms pulverized in a creamy soy-Tofutti-butter base with navy beans, lentils, brown rice, and fresh oregano from our roof garden.  (V, AF, GF)",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Beverages",
+      "items": [
+        {
+          "title": "Sanzo Sparkling Water",
+          "description": "(Pomelo flavor)",
+          "contains": []
+        },
+        {
+          "title": "Pomegranate Rosemary Lemonade",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Apple Mint Lavender Tea",
+          "description": "FYI: ‘Apple Mint’ is a tasty mint varietal. There aren’t any apples in this tea. Neat, huh?",
+          "contains": []
+        },
+        {
+          "title": "Spiced Cider",
+          "description": "Mulled with cinnamon and cloves.",
+          "contains": []
+        },
+        {
+          "title": "Spiked Spiced Cider",
+          "description": "Same as above, but with your preferred amount of rye bourbon? Or southern comfort?",
+          "contains": ["alcohol"]
+        },
+        {
+          "title": "“How The F*ck Is It October Already?” Highly Fortified White Wine Rose Spritzer",
+          "description": "Gin, Vodka, Red Moscato, Club Soda, Rose Water. Yup",
+          "contains": ["alcohol"]
+        }
+      ]
+    },
+    {
+      "title": "Empanada Wrappers",
+      "items": [
+        {
+          "title": "Argentine Wheat",
+          "description": "A buttery, flaky pastry wrapper used in Argentine Empanadas. This wrapper is more durable, warming, and filling. (V, SF, AF)",
+          "contains": ["gluten"]
+        },
+        {
+          "title": "Mexican Corn",
+          "description": "Mexican empanadas are made of a simple mix of corn, water, and salt. This wrapper is more delicate, fluffy, and bright. (V, GF, SF, AF)",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Empanada Fillings",
+      "items": [
+        {
+          "title": "Savory: Cumin Curry",
+          "description": "Impossible beef, shukuma wiki, collards, unicorn kale, ancho rojo, and ethiopian eggplant simmered in cumin, turmeric, coriander, and pepper gravy– all these greens harvested fresh from our roof garden. (V, AF, GF) ",
+          "contains": []
+        },
+        {
+          "title": "Savory: Creamy Miso Squash w/ Brown Butter Sage",
+          "description": "Butternut squash, red miso, 3-grain tempeh, and roasted walnuts. Freshly picked shiso sage mix sauteed in browned Miyoko cashew butter. (V, AF, GF) ",
+          "contains": ["tree-nut"]
+        },
+        {
+          "title": "Savory: Buta Kimchi",
+          "description": "Impossible pork with kimchi, fresh chives, tamari, and a hint of balsamic. (V, GF)",
+          "contains": ["allium"]
+        },
+        {
+          "title": "Sweet: Alice’s Apples",
+          "description": "An aromatic blend of spices and fresh local apple that's perfect for dessert! (V, GF, AF, SF)",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Dessert",
+      "items": [
+        {
+          "title": "Chinese Mooncakes",
+          "description": "Traditional “lava fruit” mooncake with salted egg custard from Dao Xiang Cun. Vegan mooncakes from Bodhi Kosher. Assorted from Fay Da Bakery.",
+          "contains": ["egg"]
+        },
+        {
+          "title": "Apple Crumb Pie, Pumpkin Pie",
+          "description": "We cancelled the pie contest, but wanted to include a seasonal dessert pie in addition to the empanadas (which we also consider a type of “hand pie.”)",
+          "contains": []
+        }
+      ]
+    }
+  ]
+}

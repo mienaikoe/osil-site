@@ -22,6 +22,7 @@ export const menuSchema = z.object({
 					contains: z.array(
 						z.enum([
 							"meat",
+							"pork",
 							"dairy",
 							"egg",
 							"fish",

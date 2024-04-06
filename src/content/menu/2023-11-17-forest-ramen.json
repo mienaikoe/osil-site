@@ -1,0 +1,108 @@
+{
+  "title": "Build Your Own Forest Ramen",
+  "description": "An eco-culinary learning and dining experience featuring delicious foraged NY native and invasive species. All ingredients will be provided.  Join us to make fresh ramen noodles before enjoying them with an assortment of delectable ramen broths and toppings, featuring a variety of locally foraged plants for your eco-edification and gastro-delight.",
+  "pubDate": "Nov 17, 2023",
+  "heroImage": "/content/2023-10-21-Forest-Ramen-Banner.png",
+  "sections": [
+    {
+      "title": "Appetizers",
+      "items": [
+        {
+          "title": "Nihon + New York Salad",
+          "description": "An homage to the cross cultural exchange that launched GROW Externships, but in salad form.          Watercress, Mizuna, with fuji apple and toasted black walnuts, tossed in a crabapple paw-paw tamari vinaigrette (V, GF, SF)",
+          "contains": ["tree-nut"]
+        },
+        {
+          "title": "Burdock Potato Salad",
+          "description": "A callback to a popular dish from our summer Invasive Species Plate Lunch, except this time we’re using Japanese burdock (aka “gobo”) instead of using foraged invasive burdock (mainly because we didn’t find any during our most recent expedition).          Russet potatoes, gobo simmered in rice wine with star anise, and spicy vegan mayo (V, GF, SF)",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Noodles",
+      "items": [
+        {
+          "title": "Traditional Ramen Noodles",
+          "description": "This dough uses a traditional mix of wheat flour and kansui: a special blend of salts and water that gives the noodle its signature texture and taste.  (V, SF)          GF noodles can also be available upon request! (Let us know ASAP!)",
+          "contains": ["gluten"]
+        }
+      ]
+    },
+    {
+      "title": "Broth Options",
+      "items": [
+        {
+          "title": "Invasive Greens Curry Miso Broth",
+          "description": "Featuring foraged Garlic Mustard and Dandelion, spiced and simmered, then blended into a sumptuous miso broth with garlic-infused olive oil. Bitter, complex greens melding with bold, warming flavors to firmly root your forest ramen adventure.",
+          "contains": ["allium"]
+        },
+        {
+          "title": "Chef Mom’s Official “Japanese Jerk Ramen Broth”",
+          "description": "A delectable beef broth to start, but with a singular combination of Cafe 424’s own jerk seasoning and a special dashi from GROW’s outpost in Yasugi, Japan. Chef Mom is putting the ‘Mami’ in Umami. You really can’t get this anywhere else, folks!",
+          "contains": ["meat"]
+        }
+      ]
+    },
+    {
+      "title": "Ramen Toppers",
+      "items": [
+        {
+          "title": "Korean-style quick pickled Purslane with daikon radish",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Toasted Black Walnuts (use sparingly! Strong flavor!)",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Toasted Garlic Mustard Seeds",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Black Garlic Molasses Oyster Mushroom",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Skylight Farm Lab’s “The Roof is on Fire” Rooftop Chili Togarashi",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Jerk Ramen Eggs by Chef Mom",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Virginia Pepperweed",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Charred Enoki Mushrooms",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Marinated Bamboo Shoots",
+          "description": "",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Dessert",
+      "items": [
+        {
+          "title": "Wineberry Coconut Jelly Tart",
+          "description": "A sorrel-infused coconut agar-jelly cast into a gluten-free tart shell, and topped with wineberries",
+          "contains": []
+        }
+      ]
+    }
+  ]
+}

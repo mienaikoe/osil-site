@@ -2,21 +2,20 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
-// import { type Menu } from "../../content/config";
 
 const menus = (await getCollection("menu")).sort(
-  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
 <PageLayout>
   <main>
-    <h2 class="heading prose-2xl mb-4 font-semibold">Recipes</h2>
+    <h2 class="heading prose-2xl mb-4 font-semibold">Menus</h2>
     <div class="md:grid md:grid-cols-3 gap-4">
       {
         menus.map((menu) => (
           <div class="card card-bordered overflow-hidden">
-            <a href={`/recipes/${menu.id}/`}>
+            <a href={`/menus/${menu.id}/`}>
               <figure class="h-48">
                 <img src={menu.data.heroImage} alt="" class="image-full" />
               </figure>

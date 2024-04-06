@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"menu">;
 
 const post = Astro.props;
-const { sections, title, heroImage } = post.data;
+const { sections, title, heroImage, pubDate } = post.data;
 ---
 
 <PageLayout>
@@ -25,7 +25,17 @@ const { sections, title, heroImage } = post.data;
       </div>
     </figure>
     <article class="prose p-12 relative -mt-24">
-      <h1>Menu for {title}</h1>
+      <h1>{title}</h1>
+      <h6>
+        {
+          pubDate.toLocaleDateString("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        }
+      </h6>
       <div>
         {
           sections.map((section) => (
