@@ -1,0 +1,68 @@
+{
+  "title": "NNN: Dumpling Night",
+  "description": "A 5-hour celebration of lunar new year with dinner, performance, and a discussion",
+  "pubDate": "Feb 25, 2024",
+  "heroImage": "/content/OSIiL-NNN-Dragon-Dumplings-BG.png",
+  "sections": [
+    {
+      "title": "Palate Cleansers & Sweets",
+      "items": [
+        {
+          "title": "Organic California Mandarins & Lots of New Year Candy",
+          "description": "",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Beverages",
+      "items": [
+        {
+          "title": "Wudang West Longevity Tea Blend (Ripe Puerh)",
+          "description": "A high grade, old tree, artisanal blend of Xiang Tu ripe puerh (2016) and 7572 ginseng aroma (2000) from Kunming, Yunnan;  Custom pressed for Wudang West",
+          "contains": ["caffeine"]
+        },
+        {
+          "title": "Mung Bean Smoothie",
+          "description": "Jerone’s mom says this is very popular in Taiwan right now.  We think it’s delicious and that is will make for an excellent  cocktail mixer.",
+          "contains": []
+        },
+        {
+          "title": "Spiked Mung Bean Smoothie",
+          "description": "Same as above, but with your preferred amount of sake? Or baijiu?",
+          "contains": ["alcohol"]
+        },
+        {
+          "title": "Pear Ginger Soju Spritzer",
+          "description": "Asian honey gold pears pureed with ginger, seltzer, and soju",
+          "contains": ["alcohol"]
+        },
+        {
+          "title": "Madame President’s Herbal Tea Blends (Skylight Farm Lab)",
+          "description": "(Post dinner only) 2 herbal teas grown by Renee in our rooftop garden: Tulsi & Lavender or Apple mint & Catmint.",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Dumpling Fillings",
+      "items": [
+        {
+          "title": "Spicy Cumin “Beef”",
+          "description": "Our plant-based take on a classic western Chinese flavor profile: spicy and savory with loads of garlic. Beyond Beef, Garlic, Cumin, Dried chilis from our rooftop garden, GF “No Soy” Soy Sauce, Shaoxing wine, Salt, Carrots, Lentils (V, SF, GF)          ",
+          "contains": []
+        },
+        {
+          "title": "Classic Chive",
+          "description": "Don’t fix what ain’t broken. We like ours extra heavy on the chives. Impossible Beef, Chives,Gginger, Garlic Soy sauce, Silken tofu, White pepper (V, GF)          ",
+          "contains": ["allium"]
+        },
+        {
+          "title": "Chrysanthemum Delight",
+          "description": "Sumptuous, delicate, and floral flavors to bring in the new year. Don’t miss it! Chrysanthemum greens, Napa Cabbage, Pumpkin Seeds, Sprouted Sunflower Seeds, Shiitake Mushroom, Glass Noodles, Chinese Mushroom Bouillon (V, SF, GF)          ",
+          "contains": []
+        }
+      ]
+    }
+  ]
+}

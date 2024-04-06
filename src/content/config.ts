@@ -31,6 +31,8 @@ export const menuSchema = z.object({
 							"tree-nut",
 							"allium",
 							"gluten",
+							"alcohol",
+							"caffeine"
 						])
 					)
 				})

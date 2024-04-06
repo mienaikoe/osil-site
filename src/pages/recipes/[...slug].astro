@@ -17,27 +17,35 @@ const { sections, title, heroImage } = post.data;
 
 <PageLayout>
   <main>
-    <figure class="mb-4 rounded-lg overflow-hidden">
+    <figure class="mb-4 rounded-lg overflow-hidden h-96 relative">
       <img src={heroImage} class="w-full" />
+      <div
+        class="bg-gradient-to-b from-transparent to-white absolute top-0 left-0 right-0 bottom-0"
+      >
+      </div>
     </figure>
-    <article class="prose">
-      <h2>Menu for {title}</h2>
-      {
-        sections.map((section) => (
-          <>
-            <h3 class="mb-8">{section.title}</h3>
-            {section.items.map((item) => (
-              <>
-                <h4>{item.title}</h4>
-                <div>{item.description}</div>
-                {item.contains.length > 0 && (
-                  <div class="italic">Contains: {item.contains.join(",")}</div>
-                )}
-              </>
-            ))}
-          </>
-        ))
-      }
+    <article class="prose p-12 relative -mt-24">
+      <h1>Menu for {title}</h1>
+      <div>
+        {
+          sections.map((section) => (
+            <div class="mb-16">
+              <h3 class="mb-6">{section.title}</h3>
+              {section.items.map((item) => (
+                <>
+                  <h4>{item.title}</h4>
+                  <div>{item.description}</div>
+                  {item.contains.length > 0 && (
+                    <div class="italic">
+                      Contains: {item.contains.join(", ")}
+                    </div>
+                  )}
+                </>
+              ))}
+            </div>
+          ))
+        }
+      </div>
     </article>
   </main>
 </PageLayout>

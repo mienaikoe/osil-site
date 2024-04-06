@@ -12,7 +12,7 @@ const menus = (await getCollection("menu")).sort(
 <PageLayout>
   <main>
     <h2 class="heading prose-2xl mb-4 font-semibold">Recipes</h2>
-    <div class="md:grid md:grid-cols-3">
+    <div class="md:grid md:grid-cols-3 gap-4">
       {
         menus.map((menu) => (
           <div class="card card-bordered overflow-hidden">
