@@ -1,0 +1,23 @@
+{
+  "title": "MAM X RatMedia: Trailblazer Heroes Debut",
+  "description": "A small bites setup for the debut of Trailblazer Heroes",
+  "pubDate": "May 13, 2024",
+  "heroImage": "/content/trailblazers.jpeg",
+  "sections": [
+    {
+      "title": "Dinner Service",
+      "items": [
+        {
+          "title": "Pokebar",
+          "description": "A self-service poke bar featuring ingredients from the 5 Trailblazer colors. Blue rice, red kimchi, Yellow mango, Green avocado, and black & white tofu will be available.",
+          "contains": ["soy", "allium"]
+        },
+        {
+          "title": "Vegan Ube Basque Cheesecake",
+          "description": "A rich, browned cake with a cashew and ube base. Creamy and fluffy.",
+          "contains": ["tree-nut"]
+        }
+      ]
+    }
+  ]
+}
