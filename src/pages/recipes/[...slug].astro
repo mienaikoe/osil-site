@@ -1,0 +1,83 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("recipe");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"recipe">;
+
+const post = Astro.props;
+const { ingredientSections, stepSections, title, heroImage, pubDate } =
+  post.data;
+
+console.log(JSON.stringify(ingredientSections, null, 2));
+---
+
+<PageLayout>
+  <main>
+    <figure class="mb-4 rounded-lg overflow-hidden h-96 relative">
+      <img src={heroImage} class="w-full" />
+      <div
+        class="bg-gradient-to-b from-transparent to-white absolute top-0 left-0 right-0 bottom-0"
+      >
+      </div>
+    </figure>
+    <article class="prose p-12 relative -mt-24">
+      <h1>{title}</h1>
+      <h6>
+        {
+          pubDate.toLocaleDateString("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        }
+      </h6>
+      <div>
+        <h3 class="mb-6">Ingredients</h3>
+        {
+          ingredientSections.map((ingredientSection) => (
+            <div class="mb-8">
+              <h4 class="mb-4">{ingredientSection.name}</h4>
+              <ul>
+                {ingredientSection.ingredients.map((ingredient) => (
+                  <li>
+                    <span>{ingredient.quantity}</span>
+                    <span>{ingredient.unit}</span>
+                    <span set:html={ingredient.name} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+      <div>
+        <h3 class="mb-6">Procedure</h3>
+        {
+          stepSections.map((stepSection) => (
+            <div class="mb-16">
+              {stepSection.name ? (
+                <h4 class="mb-4">{stepSection.name}</h4>
+              ) : null}
+              <ol>
+                {stepSection.steps.map((step) => (
+                  <li>
+                    {step.image ? <img src={step.image} width="200" /> : null}
+                    <span>{step.text}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))
+        }
+      </div>
+    </article>
+  </main>
+</PageLayout>

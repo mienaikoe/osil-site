@@ -42,9 +42,47 @@ export const menuSchema = z.object({
 	)
 });
 
+export const recipeSchema = z.object({
+	title: z.string(),
+	description: z.string(),
+	pubDate: z.coerce.date(),
+	heroImage: z.string(),
+	ingredientSections: z.array(
+		z.object({
+			name: z.string(),
+			ingredients: z.array(
+				z.object({
+					name: z.string(),
+					quantity: z.number(),
+					unit: z.enum([
+						"cup",
+						"oz",
+						"tsp",
+						"tbsp",
+						"g",
+						"mL",
+						"lb",
+					])
+				})
+			)
+		})
+	),
+	stepSections: z.array(
+		z.object({
+			name: z.string().nullable(),
+			steps: z.array(z.object({
+				text: z.string(),
+				note: z.string().optional(),
+				image: z.string(),
+			}))
+		})
+	)
+});
+
 
 export type Blog = z.infer<typeof blogSchema>;
 export type Menu = z.infer<typeof menuSchema>;
+export type Recipe = z.infer<typeof recipeSchema>;
 
 
 export type Content<ContentType> = {
@@ -62,4 +100,9 @@ const menu = defineCollection({
 	schema: menuSchema,
 });
 
-export const collections = { blog, menu };
+const recipe = defineCollection({
+	type: 'data',
+	schema: recipeSchema
+})
+
+export const collections = { blog, menu, recipe };

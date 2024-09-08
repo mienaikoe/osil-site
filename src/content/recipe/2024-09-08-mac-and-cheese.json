@@ -1,0 +1,85 @@
+{
+  "title": "Rice Cooker Mac & Cheese",
+  "description": "Recipe by @loveinapocket in partnership with @oursecretingredientislove and apicha.org",
+  "pubDate": "Sep 8, 2024",
+  "heroImage": "/content/recipe/2024-09-08-mac-and-cheese/maccheese.png",
+  "ingredientSections": [
+    {
+      "name": "Required",
+      "ingredients": [
+        {
+          "name": "macaroni pasta",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "vegetable broth",
+          "quantity": 1.25,
+          "unit": "cup"
+        },
+        {
+          "name": "Trader Joe's vegan cream cheese",
+          "quantity": 4,
+          "unit": "oz"
+        },
+        {
+          "name": "Violife shredded cheese",
+          "quantity": 0.75,
+          "unit": "cup"
+        },
+        {
+          "name": "salt",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ]
+    },
+    {
+      "name": "Optional",
+      "ingredients": [
+        {
+          "name": "frozen/canned vegetables",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "tofu or canned beans",
+          "note": "DO NOT ATTEMPT THIS WITH RAW MEAT OR DRY BEANS! Those require extra cook time, separately for safe consumption.",
+          "quantity": 0.5,
+          "unit": "cup"
+        }
+      ]
+    }
+  ],
+  "stepSections": [
+    {
+      "name": null,
+      "steps": [
+        {
+          "text": "Pour macaroni pasta and 1 cup of vegetable broth into a rice cooker. Hit the cook button and let it cook for 5 minutes.",
+          "image": ""
+        },
+        {
+          "text": "While the pasta is cooking, rinse your vegetables, if needed. Then break them apart into smaller chunks (1-3x the size of macaroni).",
+          "image": ""
+        },
+        {
+          "text": "Sample one macaroni by cutting it, if there’s no white dough in the center, then we are ready to throw your protein & veggies in. Cover and let them steam for 5 minutes.",
+          "image": ""
+        },
+        {
+          "text": "Cut your 4 oz of cream cheese into little cubes. Once the veggies and protein are warm, check the pot to see there’s still liquid. If it’s dry, add the remaining 1/4 cup of broth in and mix. Stir in cream cheese and salt, until they melt into a creamy broth.",
+          "image": ""
+        },
+        {
+          "text": "When most of the liquid has evaporated, turn off the rice cooker. Slowly stir in 3/4 cups of shredded cheese.",
+          "image": "/content/recipe/2024-09-08-mac-and-cheese/maccheese.png"
+        },
+        {
+          "text": "Plate and add toppings and seasonings.",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

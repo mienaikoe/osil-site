@@ -1,0 +1,29 @@
+{
+  "title": "",
+  "description": "",
+  "pubDate": "Jan 1, 2024",
+  "heroImage": "",
+  "ingredientSections": [
+    {
+      name: "",
+      ingredients: [
+        {
+          name: "",
+          quantity: 0,
+          unit: "",
+        }
+      ]
+    }
+  ],
+  "stepSections": [
+     {
+      name: "",
+      steps: [
+        {
+          text: "",
+          image: "", // nullable
+        }
+      ]
+     }
+  ]
+}

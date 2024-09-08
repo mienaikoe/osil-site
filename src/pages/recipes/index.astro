@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+const recipes = (await getCollection("recipe")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<PageLayout>
+  <main>
+    <h2 class="heading prose-2xl mb-4 font-semibold">Recipes</h2>
+    <div class="md:grid md:grid-cols-3 gap-4">
+      {
+        recipes.map((recipe) => (
+          <div class="card card-bordered overflow-hidden">
+            <a href={`/recipes/${recipe.id}/`}>
+              <figure class="h-48">
+                <img src={recipe.data.heroImage} alt="" class="image-full" />
+              </figure>
+              <div class="card-body prose">
+                <h4 class="card-title">{recipe.data.title}</h4>
+                <FormattedDate date={recipe.data.pubDate} />
+              </div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </main>
+</PageLayout>
