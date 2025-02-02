@@ -1,0 +1,78 @@
+{
+  "title": "D.I.Y. Dumpling Party",
+  "description": "A 4-hour celebration of lunar new year with brunch and performance. We will also try pull out one long longevity noodle.",
+  "pubDate": "Feb 2, 2025",
+  "heroImage": "/content/2025-dumplings.jpeg",
+  "sections": [
+    {
+      "title": "Palate Cleansers",
+      "items": [
+        {
+          "title": "Organic California Mandarins",
+          "description": "",
+          "contains": []
+        },
+        {
+          "title": "Snake cucumbers",
+          "description": "A refreshing, crunchy, cucumber sliced into a snake. It swims in a tangy yuzu soy sauce, with a kick of Sichuan peppercorn and sesame oil.",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Beverages",
+      "items": [
+        {
+          "title": "Wudang West Longevity Tea Blend (Ripe Puerh)",
+          "description": "A high grade, old tree, artisanal blend of Xiang Tu ripe puerh (2016) and 7572 ginseng aroma (2000) from Kunming, Yunnan;  Custom pressed for Wudang West",
+          "contains": ["caffeine"]
+        },
+        {
+          "title": "豆豆濃濃 / Coco Mung Milk",
+          "description": "Richly flavored toasted mung beans blended with coconut milk and condensed coconut milk.  Served cold.",
+          "contains": []
+        }
+      ]
+    },
+    {
+      "title": "Dumpling Fillings",
+      "items": [
+        {
+          "title": "翠珍 / Verdant Treasure",
+          "description": "Asian aromatic greens, savory shiitake, and luxurious notes of truffle.  Chrysanthemum greens, Chinese chives, Marinated Shiitake, Sprouted Silken Tofu, & French Summer Truffle Salt. (Also w/ salt, chinese mushroom bouillon, potato starch, sesame oil, and corn oil)",
+          "contains": ["soy"]
+        },
+        {
+          "title": "Impossible Scallion",
+          "description": "Fresh, vegan take on beloved classic! Impossible pork and green onions are blended with a mushroom-based 'oyster' sauce for a touch of sweetness. A slow-infused scallion oil made with shallots, star anise, ginger, and sichuan peppercorn brings it all home to mouth-watering perfection.",
+          "contains": ["allium"]
+        },
+        {
+          "title": "Beyond Carrots",
+          "description": "Shredded carrots and plant-based beef come together in this vegan reimagining of a regional favorite. The secret ingredient here is a soy-based, Korean-style BBQ sauce, brightened by a handful of finely chopped cilantro.",
+          "contains": ["soy"]
+        }
+      ]
+    },
+    {
+      "title": "Sauce",
+      "items": [
+        {
+          "title": "差點外公炸醬 / Almost Grandpa's Zhajiang Sauce",
+          "description":"Traditional Taiwanese-style zhajiang sauce loaded with garlic, scallion, and fermented soy bean paste. Nontraditionally blended with tahini and then topped with toasted walnuts, daikon cress, edamame, and Tajine.",
+          "contains": ["allium"]
+        },
+        {
+          "title": "Sichuan Chili Oil",
+          "description": "A spicy, aromatic oil made with Sichuan peppercorn, star anise, and dried chilis.  It is infused with garlic, ginger, and scallion.",
+          "contains": ["allium", "soy"]
+        },
+        {
+          "title": "Black Vinegar",
+          "description": "A rich, aged vinegar made from fermented rice.  It is sweetened with a touch of sugar and seasoned with a hint of salt.",
+          "contains": []
+        }
+      ]
+    }
+  ]
+}
