@@ -1,4 +1,4 @@
-import { defineCollection, z, type CollectionEntry, type DataEntryMap } from 'astro:content';
+import { defineCollection, z } from 'astro:content';
 
 export const blogSchema =  z.object({
 		title: z.string(),
