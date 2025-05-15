@@ -1,18 +1,6 @@
 ---
 
 ---
-<script>
-function ml_webform_success_22301790() {
-    console.log('Success');
-    const successRow = document.querySelector('.ml-subscribe-form-22301790 .row-success') as HTMLElement;
-    const formRow = document.querySelector('.ml-subscribe-form-22301790 .row-form') as HTMLElement;
-    if (successRow && formRow) {
-        successRow.style.display = 'block';
-        formRow.style.display = 'none';
-    }
-}
-</script>
-
 <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1738316");</style>
     <style type="text/css">
     /* LOADER */
@@ -601,6 +589,15 @@ function ml_webform_success_22301790() {
         .ml-form-formContent.horozintalForm .ml-button-horizontal.labelsOn { padding-top: 0px!important; }
 
       }
+
+      .ml-form-errorMessage {
+        color: red;
+        display: none;
+      }
+
+      .ml-form-errorMessage.show {
+        display: block;
+      }
     </style>
 
     <div id="mlb2-22301790" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-22301790">
@@ -619,44 +616,12 @@ function ml_webform_success_22301790() {
               
             </div>
 
-            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/1100296/forms/145351049724560424/subscribe" data-code="" method="post" target="_blank">
+            <form class="ml-block-form">
               <div class="ml-form-formContent">
                 
-
-                  
                   <div class="ml-form-fieldRow ml-last-item">
                     <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-
-                      
-
-
-                      <!-- input -->
                       <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
-                      <!-- /input -->
-
-                      <!-- textarea -->
-                      
-                      <!-- /textarea -->
-
-                      <!-- select -->
-                      
-                      <!-- /select -->
-
-                      <!-- checkboxes -->
-            
-            <!-- /checkboxes -->
-
-                      <!-- radio -->
-                      
-                      <!-- /radio -->
-
-                      <!-- countries -->
-                      
-                      <!-- /countries -->
-
-
-
-
 
                     </div>
                   </div>
@@ -668,12 +633,13 @@ function ml_webform_success_22301790() {
 
               <div class="ml-form-embedSubmit">
                 
-                  <button type="submit" class="primary">Subscribe</button>
+                  <button type="button" class="primary" id="subscribeButton">Subscribe</button>
                 
                 <button disabled="disabled" style="display: none;" type="button" class="loading">
                   <div class="ml-form-embedSubmitLoad"></div>
                   <span class="sr-only">Loading...</span>
                 </button>
+                <div class="ml-form-errorMessage">Failed to subscribe. Please try again.</div>
               </div>
 
               
@@ -700,4 +666,51 @@ function ml_webform_success_22301790() {
 <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
 <script>
     fetch("https://assets.mailerlite.com/jsonp/1100296/forms/145351049724560424/takel")
+</script>
+
+<script>
+function toggleFormBody() {
+  const successBody = document.querySelector('.ml-form-successBody') as HTMLElement;
+          if (successBody) {
+            successBody.style.display = 'block';
+          }
+          const embedBody = document.querySelector('.ml-form-embedBody') as HTMLElement;
+          if (embedBody) {
+            embedBody.style.display = 'none';
+          }
+}
+
+document.getElementById('subscribeButton')?.addEventListener('click', function() {
+  var form = document.querySelector('.ml-block-form');
+  var emailInput = form?.querySelector('input[name="fields[email]"]') as HTMLInputElement;
+  var emailValue = emailInput?.value;
+
+  if (emailValue) {
+    fetch('https://assets.mailerlite.com/jsonp/1100296/forms/145351049724560424/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        'fields[email]': emailValue,
+        'ml-submit': '1',
+        'anticsrf': 'true',
+      }),
+    })
+      .then(response => {
+        if (response.ok) {
+          toggleFormBody();
+        } else {
+          document.querySelector('.ml-form-errorMessage')?.classList.add('show');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+      });
+  } else {
+    alert('Please enter a valid email address.');
+  }
+});
+
 </script>
